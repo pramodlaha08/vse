@@ -6,7 +6,7 @@
       </code>
     </pre>
     <div class="copy" @click="handleCopy">
-      <p v-if="copied">Copied!</p>
+      <p class="copied" v-if="copied">Copied!</p>
       <i class="fa-regular fa-copy"></i>
     </div>
   </div>
@@ -47,13 +47,22 @@ const handleCopy = () => {
 
 .copy {
   position: absolute;
-  right: 30px;
-  bottom: 45px;
+  right: 40px;
+  bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.3rem;
   color: #008c8b;
   cursor: pointer;
+  width: 3rem;
+}
+
+.copy p{
+  font-size: 0.7rem;
+}
+
+.copy i{
+  font-size: 1rem;
 }
 </style>
