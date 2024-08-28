@@ -1,23 +1,14 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import * as path from 'path';
 
 export default defineConfig({
-  plugins: [vue()],
-  build: {
-    lib: {
-      entry: 'src/index.ts',
-      name: 'VueScrollEase',
-      fileName: (format) => `vue-scroll-ease.${format}.ts` 
+  plugins: [
+    vue(),
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
     },
-    rollupOptions: {
-      external: ['vue'],
-      output: {
-        globals: {
-          vue: 'Vue'
-        },
-        format: 'umd', 
-        exports: 'named',
-      }
-    }
-  }
-});
+  },
+})
