@@ -60,6 +60,7 @@ const handleCopy = () => {
 
 .copy p{
   font-size: 0.7rem;
+  font-family: "Roboto", system-ui;
 }
 
 .copy i{
