@@ -76,4 +76,14 @@
   transform: scale(0.6);
   animation: fadeAndGrow 1.2s ease-in-out forwards;
 }
+
+.reveal-from-bottom {
+  animation: revealFromBottom 1.2s ease-out forwards;
+}
+
+.element {
+  animation:
+    revealAndBounce 1.2s ease-out forwards,
+    bounceOnly 2s ease-in-out infinite 1.2s;
+}
 </style>
