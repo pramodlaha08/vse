@@ -45,6 +45,9 @@ const handleCopy = () => {
   position: relative;
 }
 
+pre{
+  border-radius: inherit;
+}
 .copy {
   position: absolute;
   right: 40px;
