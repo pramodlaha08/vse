@@ -104,11 +104,11 @@ import Hero from "./Hero.vue"
           from: 300,
           direction: 'top',
           delay: 300,
-          duration: 5,
+          duration: 4,
         }"
       >
         &lt;div v-scroll-ease="{ from: 300, direction: 'top', delay: 300,
-        duration: 10 }"&gt;&lt;/div&gt;
+        duration: 4 }"&gt;&lt;/div&gt;
       </code-box>
     </div>
     <div class="flex-wrapper" style="justify-content: flex-end">
