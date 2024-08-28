@@ -14,9 +14,10 @@
     "vue-scroll-ease": "^0.1.5"
   },
   "devDependencies": {
-    "vue": "^3.4.37",
     "@vitejs/plugin-vue": "^5.1.2",
     "typescript": "^5.5.4",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vue": "^3.4.37",
+    "vue-tsc": "^2.0.29"
   }
 }
