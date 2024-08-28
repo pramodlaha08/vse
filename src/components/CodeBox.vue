@@ -54,5 +54,6 @@ const handleCopy = () => {
   align-items: center;
   gap: 0.5rem;
   color: #008c8b;
+  cursor: pointer;
 }
 </style>
