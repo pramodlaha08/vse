@@ -104,7 +104,7 @@ import Hero from "./Hero.vue"
           from: 300,
           direction: 'top',
           delay: 300,
-          duration: 10,
+          duration: 5,
         }"
       >
         &lt;div v-scroll-ease="{ from: 300, direction: 'top', delay: 300,
