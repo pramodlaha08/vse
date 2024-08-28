@@ -132,7 +132,7 @@ import Hero from "./Hero.vue"
   width: 100vw;
   max-width: 100%;
   height: 100vh;
-  background-color: #007582d9;
+  background-color: #824e0063;
   position: fixed;
   overflow: hidden;
   z-index: -1;
