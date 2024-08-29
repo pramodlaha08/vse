@@ -2,11 +2,8 @@
   <div class="hero_container">
     <div class="hero_container--link">
       <a target="_blank" href="https://github.com/bishwa-shah/vue-scroll-ease">
-        <img
-          class="hero_container--link--logo"
-          src="https://i.postimg.cc/7ZwPmP4G/logo.png"
-          alt="github-link-for-doc"
-        />
+        <img class="hero_container--link--logo" src="https://i.postimg.cc/7ZwPmP4G/logo.png"
+          alt="github-link-for-doc" />
       </a>
     </div>
     <div class="hero_container__heading">
@@ -24,6 +21,7 @@
 
 <style scoped lang="scss">
 @import "../assets/animation.css";
+
 .hero_container {
   &--link {
     text-align: right;
@@ -32,10 +30,12 @@
     transform: scale(0.6);
     animation: fadeAndGrow 1.2s ease-in-out forwards;
     animation-delay: 0.5s;
+
     &--logo {
       width: 4rem;
     }
   }
+
   &__heading {
     display: flex;
     flex-direction: column;
@@ -45,30 +45,46 @@
     align-items: center;
     height: 66vh;
     color: #fff;
+    @media (max-width: 768px) {
+          margin-top: 11rem;
+          height: 52vh;
+          margin-bottom: 3rem;
+        }
+
     &--top {
       opacity: 0;
       transform: scale(0.6);
       animation: fadeAndGrow 1.2s ease-in-out forwards;
       animation-delay: 0.5s;
+      font-size: 2rem;
+
       h1 {
         margin: 0;
         padding: 0;
-        font-weight: 700;
-        font-size: 3rem;
+        font-weight: 800;
+        font-size: 1.7em;
         font-family: inherit;
+
         @media (max-width: 768px) {
-          font-size: 2rem;
+          font-size: 1.1em;
           text-wrap: nowrap;
         }
       }
+
       p {
         margin: 0;
         padding: 0;
-        font-weight: 500;
-        font-size: 1rem;
+        font-weight: 600;
+        font-size: 0.7em;
         font-family: inherit;
+
+        @media (max-width: 768px) {
+          font-size: 0.65em;
+          text-wrap: nowrap;
+        }
       }
     }
+
     &__bottom {
       p {
         font-weight: 500;
@@ -76,9 +92,15 @@
         font-family: inherit;
         animation: revealAndBounce 1.2s ease-out forwards,
           bounceOnly 2s ease-in-out infinite 1.2s;
+        text-wrap: nowrap;
+
+        @media (max-width: 768px) {
+          font-size: 1.3rem;
+        }
       }
     }
   }
+
   &__reveal {
     text-transform: capitalize;
     text-align: right;
@@ -86,6 +108,12 @@
     color: #eee683;
     margin-bottom: 3rem;
     animation: revealFromBottom 1.2s ease-out forwards;
+    padding-right: 0.7rem;
+
+    @media (max-width: 768px) {
+          font-size: 0.75rem;
+          text-wrap: nowrap;
+        }
   }
 }
 </style>
