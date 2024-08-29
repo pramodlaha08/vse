@@ -20,7 +20,7 @@ import Main from "./components/Main.vue";
 }
 
 .background-img {
-  background-image: url('../../assets/background.jpg');
+  background-image: url('https://i.postimg.cc/sxWf0v1S/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

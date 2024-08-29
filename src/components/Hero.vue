@@ -4,7 +4,7 @@
       <a target="_blank" href="https://github.com/bishwa-shah/vue-scroll-ease">
         <img
           class="hero_container--link--logo"
-          src="../../assets/logo.png"
+          src="https://i.postimg.cc/7ZwPmP4G/logo.png"
           alt="github-link-for-doc"
         />
       </a>
