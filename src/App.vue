@@ -7,7 +7,7 @@ import Main from "./components/Main.vue";
   <div class="background"></div>
   <Main />
 </template>
-<style scoped>
+<style scoped lang="scss">
 .background-img,
 .background {
   margin: 0;
@@ -18,14 +18,14 @@ import Main from "./components/Main.vue";
   position: fixed;
   overflow: hidden;
   z-index: -1;
+
+  &.background-img {
+    background-image: url('../../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
-.background-img {
-  background-image: url("../../assets/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: -1;
-}
 
 </style>
