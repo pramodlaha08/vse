@@ -36,7 +36,7 @@ const scrollOptions = [
 
 <style scoped lang="scss">
 .vse-main {
-  max-width: 1800px;
+  max-width: 1450px;
   margin: 0 auto;
   overflow: hidden;
   padding:0 .4rem;
